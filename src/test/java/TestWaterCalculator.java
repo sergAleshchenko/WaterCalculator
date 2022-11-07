@@ -30,17 +30,20 @@ public class TestWaterCalculator {
         int[] landscape3 = {2, 0, 2};
         int[] landscape4 = {5, 2, 3, 4, 5, 4, 0, 3, 1};
         int[] landscape5 = {5, 2, 3, 4, 5, 4, 0, 3, 1, 44, 27};
+        int[] landscape6 = {0, 0, 0, 0, 0, 0};
 
         long result1 = waterCalculator.calculateWaterAmount(landscape1);
         long result2 = waterCalculator.calculateWaterAmount(landscape2);
         long result3 = waterCalculator.calculateWaterAmount(landscape3);
         long result4 = waterCalculator.calculateWaterAmount(landscape4);
         long result5 = waterCalculator.calculateWaterAmount(landscape5);
+        long result6 = waterCalculator.calculateWaterAmount(landscape6);
 
         assertEquals(0, result1);
         assertEquals(1, result2);
         assertEquals(2, result3);
         assertEquals(9, result4);
         assertEquals(18, result5);
+        assertEquals(0, result6);
     }
 }
